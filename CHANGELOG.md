@@ -50,6 +50,7 @@
 - Optimize layout process by removing `ASRectMap`.  [Adlai Holler](https://github.com/Adlai-Holler)
 - Remove necessity to use view to access rangeController in ASTableNode, ASCollectionNode. [Michael Schneider](https://github.com/maicki)
 - Remove display node's reliance on shared_ptr. [Adlai Holler](https://github.com/Adlai-Holler)
+- Fix crash setting attributed text on multiple threads [Michael Schneider](https://github.com/maicki)
 
 ## 2.7
 - Fix pager node for interface coalescing. [Max Wang](https://github.com/wsdwsd0829) [#877](https://github.com/TextureGroup/Texture/pull/877)
