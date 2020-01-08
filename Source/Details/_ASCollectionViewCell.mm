@@ -25,6 +25,16 @@
 {
   ASDisplayNodeAssertMainThread();
   ASCellNode *node = element.node;
+
+  if (node) {
+    self.layer.cornerRadius = node.cornerRadius;
+    self.backgroundColor = node.cellBackgroundColor;
+    self.selectedBackgroundView = node.selectedBackgroundView;
+    self.backgroundView = node.backgroundView;
+
+    self.clipsToBounds = node.clipsToBounds;
+  }
+
   node.layoutAttributes = _layoutAttributes;
   _element = element;
   
